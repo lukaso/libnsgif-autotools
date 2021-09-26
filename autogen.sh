@@ -10,6 +10,8 @@ else
   echo using libtoolize
 fi
 
+cd `dirname "$0"`
+
 aclocal 
 autoconf
 $LIBTOOLIZE --copy --force --automake
